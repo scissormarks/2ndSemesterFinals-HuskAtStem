@@ -1,0 +1,32 @@
+    //Variables
+//FONTS
+//font-family
+$font-def:     "Roboto", sans-serif;
+//
+$fontsize-navitem:     24px; //Used in the navigation
+$fontsize-header:      52px; //used for main page headers
+$fontsize-subheader:   36px; //used for subsections of a given page
+$fontsize-p:           18px; //used for normal text
+
+//COLORS
+$color-primary:     #333333; //Used for the nav, footer and other overlays.
+$color-secondary:   #FFFFFF; //Used for content backgrounds
+$color-overlay:     rgba(0, 0, 0, 0.15); //used for primary overlay.
+$color-hili:        #BA0052; //Used to highlight certain elements like headers, buttons.
+$color-bg:          #F2f2f2; //Used for the background
+$color-f-h1:        #272727; //Used for the main page header
+$color-f-h2:        #333333; 
+$color-f-p:         #4F4F4F; //Used for paragraphs
+
+//MARGIN
+$margin-def:        16px; //Used for content, headers, etc.
+
+//PADDING
+$padding-def:       16px; //Used for content, headers, nav items, etc.
+
+//BOX-SHADOW
+$boxshadow-def:     0 3px 6px rgba(0, 0, 0, 0.14); //default box-shadow
+$boxshadow-dark:    0 3px 10px rgba(0, 0, 0, 0.45); //default box-shadow
+
+//BORDER-RADIUS
+$borderradius-def:  4px; //default border-radius

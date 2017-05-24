@@ -1,0 +1,16 @@
+footer {
+    div {
+        position: absolute;
+	    left: 0;
+	    bottom: 0;
+        height: 64px;
+        width: 100%;
+        background-color: $color-primary;
+        
+        p {
+            font-family: $font-def;
+            padding: $padding-def;
+            color: white;
+        }
+    }
+}

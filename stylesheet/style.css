@@ -1,0 +1,118 @@
+/* Scss Document */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #F2f2f2;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+nav {
+  background-color: #333333; }
+  nav div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #333333;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45); }
+    nav div a {
+      padding: 16px;
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      color: white;
+      text-decoration: none; }
+
+#reminder form {
+  text-align: center; }
+  #reminder form input#submit {
+    background: none;
+    border: none;
+    font-size: 1em;
+    color: blue;
+    padding: padding-def; }
+
+#reminder p {
+  padding: padding-def; }
+
+#tableofcontent {
+  padding: 16px; }
+  #tableofcontent ul {
+    padding: 0 16px; }
+    #tableofcontent ul a {
+      color: #BA0052;
+      font-size: 18px; }
+
+main {
+  width: 100%;
+  max-width: 100%;
+  margin: 64px 0;
+  color: #4F4F4F;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  main header {
+    margin: 16px;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-height: 96px; }
+    main header img {
+      height: 96px; }
+  main h1 {
+    color: #272727; }
+  main h2 {
+    padding: 16px;
+    text-align: center;
+    color: #333333; }
+  main p {
+    font-size: 18px; }
+  main .content {
+    max-width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+    margin-bottom: 16px; }
+  main #pagecontent {
+    padding: 16px;
+    padding-top: 16px;
+    max-width: 980px; }
+
+footer div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 64px;
+  width: 100%;
+  background-color: #333333; }
+  footer div p {
+    font-family: "Roboto", sans-serif;
+    padding: 16px;
+    color: white; }

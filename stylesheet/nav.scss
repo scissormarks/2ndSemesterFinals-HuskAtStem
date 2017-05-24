@@ -1,0 +1,22 @@
+//
+nav {
+    background-color: $color-primary;
+    
+    div {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: $color-primary;
+        box-shadow: $boxshadow-dark;
+        a {
+            padding: $padding-def;
+            font-family: $font-def;
+            font-size: $fontsize-navitem;
+            color: white;
+            text-decoration: none;
+            
+        }
+    } 
+}

@@ -1,0 +1,46 @@
+main {
+    width: 100%;
+    max-width: 100%;
+    margin: 64px 0; 
+    color: $color-f-p;
+    justify-content: center;
+    
+    header {
+        margin: $margin-def;
+        justify-content: space-between;
+        align-items: center;
+        max-height: 96px;
+        
+        img {
+            height: 96px;
+        }
+    }
+    
+    h1 {
+        color: $color-f-h1;
+    }
+    
+    h2 {
+        padding: $padding-def;
+        text-align: center;
+        color: $color-f-h2;
+    }
+    
+    p {
+        font-size: $fontsize-p;
+    }
+    
+    .content {
+        max-width: 100%;
+        padding: $padding-def;
+        border-radius: $borderradius-def;
+        background-color: $color-secondary;
+        box-shadow: $boxshadow-def;
+        margin-bottom: $margin-def;
+    }
+    #pagecontent {
+        padding: $padding-def;
+        padding-top: 16px;
+        max-width: 980px;
+    }
+}
