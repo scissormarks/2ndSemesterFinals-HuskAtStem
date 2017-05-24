@@ -5,6 +5,10 @@ main {
     color: $color-f-p;
     justify-content: center;
     
+    #pagecontent {
+        padding: 0 $padding-def;
+        max-width: 980px;
+    }
     header {
         margin: $margin-def;
         justify-content: space-between;
@@ -38,9 +42,5 @@ main {
         box-shadow: $boxshadow-def;
         margin-bottom: $margin-def;
     }
-    #pagecontent {
-        padding: $padding-def;
-        padding-top: 16px;
-        max-width: 980px;
-    }
+    
 }

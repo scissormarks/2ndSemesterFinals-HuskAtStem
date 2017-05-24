@@ -13,7 +13,7 @@ $color-primary:     #333333; //Used for the nav, footer and other overlays.
 $color-secondary:   #FFFFFF; //Used for content backgrounds
 $color-overlay:     rgba(0, 0, 0, 0.15); //used for primary overlay.
 $color-hili:        #BA0052; //Used to highlight certain elements like headers, buttons.
-$color-bg:          #F2f2f2; //Used for the background
+$color-bg:          #efefef; //Used for the background
 $color-f-h1:        #272727; //Used for the main page header
 $color-f-h2:        #333333; 
 $color-f-p:         #4F4F4F; //Used for paragraphs
@@ -30,3 +30,5 @@ $boxshadow-dark:    0 3px 10px rgba(0, 0, 0, 0.45); //default box-shadow
 
 //BORDER-RADIUS
 $borderradius-def:  4px; //default border-radius
+$borderradius-med:  8px; //default border-radius
+$borderradius-big:  32px; //default border-radius

@@ -8,7 +8,7 @@ html {
   min-height: 100%; }
 
 body {
-  background-color: #F2f2f2;
+  background-color: #efefef;
   font-family: "Roboto", sans-serif; }
 
 a {
@@ -17,8 +17,7 @@ a {
 hr {
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 .wrapper {
   display: -webkit-flex;
@@ -43,20 +42,34 @@ nav {
       padding: 16px;
       font-family: "Roboto", sans-serif;
       font-size: 24px;
-      color: white;
+      color: #FFFFFF;
       text-decoration: none; }
 
-#reminder form {
-  text-align: center; }
-  #reminder form input#submit {
-    background: none;
-    border: none;
-    font-size: 1em;
-    color: blue;
-    padding: padding-def; }
-
-#reminder p {
-  padding: padding-def; }
+#reminder {
+  background-color: #BA0052;
+  color: #FFFFFF;
+  padding: 16px;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  border: 0px; }
+  #reminder h2 {
+    color: #FFFFFF; }
+  #reminder button {
+    background-color: #FFFFFF;
+    color: #BA0052;
+    font-size: 18px;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 32px;
+    border: 0px; }
+  #reminder form {
+    text-align: center; }
+    #reminder form input#submit {
+      background: none;
+      border: none;
+      font-size: 1em;
+      color: blue;
+      padding: padding-def; }
 
 #tableofcontent {
   padding: 16px; }
@@ -74,6 +87,9 @@ main {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  main #pagecontent {
+    padding: 0 16px;
+    max-width: 980px; }
   main header {
     margin: 16px;
     -webkit-justify-content: space-between;
@@ -100,10 +116,6 @@ main {
     background-color: #FFFFFF;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
     margin-bottom: 16px; }
-  main #pagecontent {
-    padding: 16px;
-    padding-top: 16px;
-    max-width: 980px; }
 
 footer div {
   position: absolute;
@@ -115,4 +127,4 @@ footer div {
   footer div p {
     font-family: "Roboto", sans-serif;
     padding: 16px;
-    color: white; }
+    color: #FFFFFF; }
