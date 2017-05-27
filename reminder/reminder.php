@@ -3,5 +3,8 @@
     <div>
         <p>Tilmeld dig eller en ven og få en påmindelse en uge før og på dagen, om at der er kommunalvalg den 21. november.</p>
     </div>
-    <a><button>Tilmeld dig her</button></a>
+    <button id="modalBtn">Tilmeld dig her</button>
+    <? 
+        require_once('reminder/new-reminder.php');
+    ?>
 </div>

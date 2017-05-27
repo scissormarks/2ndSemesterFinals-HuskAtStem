@@ -1,13 +1,13 @@
-<div id="pagecontent">
+<div id="pagecontent" class="content">
     <header class="wrapper">
         <div>
             <p>Region Sjælland</p>
             <h1>Ringsted</h1>
         </div>    
-        <img src="img/regioner/sjaelland.png">    
+        <img src="img/regioner/sjaelland.png">
     </header>
     <hr>
-        <? require_once('reminder.php');?> <!--Loads the reminder from a seperate file-->
+        <? require_once('reminder/reminder.php');?> <!--Loads the reminder from a seperate file-->
         <?// require_once('tableofcontent.php');?> <!--Loads the reminder from a seperate file-->
     <h2 id="news">Lokal Aktuelt</h2>
     <div class="content">

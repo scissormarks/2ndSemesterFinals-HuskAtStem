@@ -1,3 +1,3 @@
 <div id="footer" class="wrapper">
-    <p>Footer</p>
+    <p>This is a student project</p>
 </div>
