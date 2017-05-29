@@ -12,7 +12,14 @@ body {
   font-family: "Roboto", sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #BA0052; }
+
+ul {
+  padding-left: 16px; }
+
+li {
+  padding: 4px; }
 
 hr {
   border: 0;
@@ -25,52 +32,77 @@ hr {
   display: flex; }
 
 nav {
-  background-color: #333333; }
-  nav div {
-    position: fixed;
-    top: 0;
+  z-index: 2;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  nav .navbar {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 100%;
+    max-width: 1280px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  nav .navitems {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
-    background-color: #333333;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45); }
-    nav div a {
-      padding: 16px;
+    align-items: center; }
+    nav .navitems a {
+      margin: 16px;
       font-family: "Roboto", sans-serif;
       font-size: 24px;
       color: #FFFFFF;
       text-decoration: none; }
+  nav .logo {
+    height: 32px;
+    margin: 16px; }
 
-#reminder {
+.reminder {
   background-color: #BA0052;
   color: #FFFFFF;
   padding: 16px;
   text-align: center;
   border-radius: 0 0 8px 8px;
   border: 0px; }
-  #reminder h1 {
+  .reminder h1 {
     color: #FFFFFF; }
-  #reminder h2 {
+  .reminder h2 {
     color: #FFFFFF; }
-  #reminder button {
+  .reminder button {
     background-color: #FFFFFF;
     color: #BA0052;
     font-size: 18px;
-    padding: 16px;
+    padding: 16px 32px;
     margin: 16px;
     border-radius: 32px;
     border: 0px; }
-  #reminder form {
+  .reminder form {
     text-align: center; }
-    #reminder form input#submit {
-      background: none;
+    .reminder form input[type=text], .reminder form select {
+      padding: 8px;
+      width: 50%;
+      border: 2px solid rgba(0, 0, 0, 0.15);
+      border-radius: 32px; }
+    .reminder form input[type=tel], .reminder form select {
+      padding: 8px;
+      width: 50%;
+      border: 2px solid rgba(0, 0, 0, 0.15);
+      border-radius: 32px; }
+    .reminder form #submit {
+      background-color: #BA0052;
+      color: #FFFFFF;
       border: none;
       font-size: 1em;
-      color: blue;
       padding: padding-def; }
 
 .modal {
@@ -93,10 +125,10 @@ nav {
 .modal-content {
   position: relative;
   background-color: #FFFFFF;
-  margin: auto;
+  margin: 16px;
   padding: 0;
   border-radius: 8px;
-  width: 80%;
+  width: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -133,17 +165,23 @@ nav {
   cursor: pointer; }
 
 .modal-header {
-  padding: 2px 16px;
+  padding: 16px;
   border-radius: 8px 8px 0 0;
   background-color: #BA0052;
   color: white; }
 
 .modal-body {
-  padding: 2px 16px; }
+  padding: 16px; }
 
 #submit {
   background-color: #BA0052;
   color: #FFFFFF; }
+
+.remindbox {
+  bottom: 64px;
+  position: relative; }
+  .remindbox .reminder {
+    border-radius: 8px 8px 0 0; }
 
 #tableofcontent {
   padding: 16px; }
@@ -152,6 +190,34 @@ nav {
     #tableofcontent ul a {
       color: #BA0052;
       font-size: 18px; }
+
+.splash-header {
+  padding: 16px;
+  width: 100%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .splash-header h1 {
+    text-align: center; }
+
+.map {
+  margin: 16px;
+  width: 100%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .map img {
+    width: 90%;
+    max-width: 600px; }
+
+.search {
+  padding: 16px; }
+  .search input[type=text], .search select {
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 32px; }
 
 main {
   width: 100%;
@@ -194,6 +260,9 @@ main {
 .parties {
   background: #FFFFFF;
   padding: 16px 0; }
+  .parties a {
+    width: 100%;
+    text-align: right; }
   .parties .description {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -209,11 +278,24 @@ main {
     align-items: center; }
   .parties .party-letter {
     margin: 16px;
-    font-weight: bold; }
-  .parties .about-button img {
+    font-weight: bold;
+    -webkit-flex: 1 0 0;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0; }
+  .parties .party-name {
+    -webkit-flex: 1 0 0;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    text-align: center; }
+  .parties .about-button {
     margin: 16px;
-    width: 24px;
-    height: 24px; }
+    text-align: right;
+    -webkit-flex: 1 0 0;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0; }
+    .parties .about-button img {
+      width: 24px;
+      height: 24px; }
   .parties .active {
     -moz-transform: scaleY(-1);
     -o-transform: scaleY(-1);
@@ -242,16 +324,21 @@ main {
   border-top: 0.5px solid rgba(0, 0, 0, 0.15);
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.15); }
 
+.res {
+  margin: 16px;
+  text-align: right;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0; }
+
 .dif-pos {
-  color: #4caf50;
-  font-size: 0.8em; }
+  color: #4caf50; }
 
 .dif-neg {
-  color: #f44336;
-  font-size: 0.8em; }
+  color: #f44336; }
 
 footer div {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   height: 64px;

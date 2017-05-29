@@ -15,11 +15,10 @@
         </nav>
         
         <main class="wrapper">
-            <? require_once('splashpage.php');?> <!--Loads the splashpage from a seperate file-->
-            
+            <? require_once('content.php');?> <!--PUT CONTENT HERE-->
         </main>
         <div class="remindbox">
-        <? require_once('reminder/reminder.php');?> <!--Loads the reminder from a seperate file-->
+        <? include('reminder/reminder.php');?> <!--Loads the reminder from a seperate file-->
         </div>
         <footer>
             <? require_once('footer.php');?> <!--Loads the footer from a seperate file-->

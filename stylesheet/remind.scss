@@ -1,4 +1,4 @@
-#reminder {
+.reminder {
     background-color: $color-hili;
     color: $color-secondary;
     padding: $padding-def;
@@ -17,18 +17,30 @@
         background-color: $color-secondary;
         color: $color-hili;
         font-size: $fontsize-p;
-        padding: $padding-def;
+        padding: $padding-def 32px;
         margin: $margin-def;
         border-radius: $borderradius-big;
         border: 0px;
     }
     form {
         text-align: center;
-        input#submit {
-            background:none;
+        input[type=text], select {
+            padding: $padding-sma;
+            width: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            border-radius: $borderradius-big;
+        }
+        input[type=tel], select {
+            padding: $padding-sma;
+            width: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            border-radius: $borderradius-big;
+        }
+        #submit {
+            background-color: $color-hili;
+            color: $color-secondary;
             border:none;
             font-size:1em;
-            color:blue;
             padding: padding-def;
         }
     }
@@ -53,10 +65,10 @@
 .modal-content {
     position: relative;
     background-color: $color-secondary;
-    margin: auto;
+    margin: $margin-def;
     padding: 0;
     border-radius: $borderradius-med;
-    width: 80%;
+    width: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -91,16 +103,23 @@
 }
 
 .modal-header {
-    padding: 2px 16px;
+    padding: $padding-def;
     border-radius: $borderradius-med $borderradius-med 0 0;
     background-color: $color-hili;
     color: white;
 }
 
 .modal-body {
-    padding: 2px 16px;
+    padding: $padding-def;
 }
 #submit {
     background-color: $color-hili;
     color: $color-secondary;
+}
+.remindbox {
+    bottom: 64px;
+    position: relative;
+    .reminder {
+    border-radius: $borderradius-med $borderradius-med 0 0;
+    }
 }

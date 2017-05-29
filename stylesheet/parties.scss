@@ -1,6 +1,10 @@
 .parties {
     background: $color-secondary;
     padding: $padding-def 0;
+    a {
+        width: 100%;
+        text-align: right;
+    }
     .description {
         display: flex;
         flex-wrap: wrap;
@@ -10,12 +14,17 @@
     .party-letter {
         margin: $margin-def;
         font-weight: bold;
+        flex: 1 0 0;
     }
     .party-name {
+        flex: 1 0 0;
+        text-align: center;
     }
     .about-button {
+        margin: $margin-def;
+        text-align: right;
+        flex: 1 0 0;
         img {
-            margin: $margin-def;
             width: 24px;
             height: 24px;
         }
@@ -48,11 +57,14 @@
     border-top: 0.5px solid rgba(0, 0, 0, 0.15);
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
 }
+.res {
+    margin: $margin-def;
+    text-align: right;
+    flex: 1 0 0;
+}
 .dif-pos {
     color: #4caf50;
-    font-size: 0.8em;
 }
 .dif-neg {
     color: #f44336;
-    font-size: 0.8em;
 }

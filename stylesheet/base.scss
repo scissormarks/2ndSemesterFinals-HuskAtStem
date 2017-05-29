@@ -13,7 +13,14 @@ body {
     font-family: $font-def;
 }
 a {
-    text-decoration: none;    
+    text-decoration: none;
+    color: $color-hili;
+}
+ul {
+    padding-left: $padding-def;
+}
+li {
+    padding: 4px;
 }
 hr {
     border: 0;

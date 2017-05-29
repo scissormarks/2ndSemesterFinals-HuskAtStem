@@ -1,0 +1,28 @@
+.splash-header {
+    padding: $padding-def;
+    width: 100%;
+    justify-content: center;
+    h1 {
+        text-align: center;
+    }
+}
+.map {
+    margin: $margin-def;
+    width: 100%;
+    justify-content: center;
+    img {
+        width: 90%;
+        max-width: 600px;
+    }
+}
+.search {
+    padding: $padding-def;
+    input[type=text], select {
+        text-align: center;
+        padding: $padding-def;
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        border-radius: $borderradius-big;
+    }
+    
+}
