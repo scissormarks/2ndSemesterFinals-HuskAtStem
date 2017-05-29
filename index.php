@@ -21,5 +21,7 @@
         <footer>
             <? require_once('footer.php');?> <!--Loads the footer from a seperate file-->
         </footer>
+        <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+        <script src='js/main.js'></script>
     </body>
 </html>

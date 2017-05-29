@@ -1,0 +1,58 @@
+.parties {
+    background: $color-secondary;
+    padding: $padding-def 0;
+    .description {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .party-letter {
+        margin: $margin-def;
+        font-weight: bold;
+    }
+    .party-name {
+    }
+    .about-button {
+        img {
+            margin: $margin-def;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .active {
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
+    }
+    .about {
+        padding: $padding-def 0;
+        border-top: 0.5px solid rgba(0, 0, 0, 0.15);
+        width: 100%;
+        align-self: flex-end;
+        background: $color-bg;
+        div {
+            width: 100%;
+            padding: 0 $padding-def;
+            font-size: $fontsize-p;
+            a {
+                text-align: right;
+            }
+        }
+    }
+}
+.party {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+.dif-pos {
+    color: #4caf50;
+    font-size: 0.8em;
+}
+.dif-neg {
+    color: #f44336;
+    font-size: 0.8em;
+}

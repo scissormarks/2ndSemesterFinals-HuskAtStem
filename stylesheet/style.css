@@ -188,8 +188,67 @@ main {
     padding: 16px;
     border-radius: 4px;
     background-color: #FFFFFF;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.14);
     margin-bottom: 16px; }
+
+.parties {
+  background: #FFFFFF;
+  padding: 16px 0; }
+  .parties .description {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .parties .party-letter {
+    margin: 16px;
+    font-weight: bold; }
+  .parties .about-button img {
+    margin: 16px;
+    width: 24px;
+    height: 24px; }
+  .parties .active {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -webkit-filter: FlipV;
+    filter: FlipV;
+    -ms-filter: "FlipV"; }
+  .parties .about {
+    padding: 16px 0;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.15);
+    width: 100%;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    background: #efefef; }
+    .parties .about div {
+      width: 100%;
+      padding: 0 16px;
+      font-size: 18px; }
+      .parties .about div a {
+        text-align: right; }
+
+.party {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.15); }
+
+.dif-pos {
+  color: #4caf50;
+  font-size: 0.8em; }
+
+.dif-neg {
+  color: #f44336;
+  font-size: 0.8em; }
 
 footer div {
   position: absolute;
