@@ -5,6 +5,6 @@
     </div>
     <button id="modalBtn">Tilmeld dig her</button>
     <? 
-        require_once('reminder/new-reminder.php');
+        require('reminder/new-reminder.php');
     ?>
 </div>

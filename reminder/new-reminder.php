@@ -8,7 +8,7 @@ $input_cmd = filter_input(INPUT_POST, 'cmd', FILTER_SANITIZE_STRING);
 ?>
 <!--The Modal Box-->
 <div id="reminderModal" class="modal">
-    
+    <div class="wrapper">
     <!--Modal content-->
     <div class="modal-content">
         <div class="modal-header">
@@ -31,7 +31,7 @@ $input_cmd = filter_input(INPUT_POST, 'cmd', FILTER_SANITIZE_STRING);
             </form><br>
         </div>    
     </div>
-    
+    </div>
 </div>
 
 <!--Modal script-->

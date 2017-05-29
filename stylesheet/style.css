@@ -129,6 +129,8 @@ nav {
   padding: 0;
   border-radius: 8px;
   width: auto;
+  min-width: 80%;
+  max-width: 640px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -182,6 +184,11 @@ nav {
   position: relative; }
   .remindbox .reminder {
     border-radius: 8px 8px 0 0; }
+
+#reminderModal .wrapper {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 #tableofcontent {
   padding: 16px; }
@@ -338,7 +345,7 @@ main {
   color: #f44336; }
 
 footer div {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   height: 64px;
