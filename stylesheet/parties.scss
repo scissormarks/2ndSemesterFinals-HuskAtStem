@@ -24,6 +24,9 @@
         margin: $margin-def;
         text-align: right;
         flex: 1 0 0;
+        height: 24px;
+        &:hover {
+        }
         img {
             width: 24px;
             height: 24px;

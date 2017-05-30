@@ -45,7 +45,8 @@ var span = document.getElementsByClassName("close")[0];
     
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
-    modal.style.display = "block";
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -71,7 +72,7 @@ switch($input_cmd) {
         $stmt->bind_param('sss', $input_name, $input_phone, $input_zip);//Finds the values in the form based on previously noted variables(Top of the document)
         $stmt->execute();
         if ($stmt->affected_rows > 0) {
-            header("Refresh:0");//Heads back to the main page
+            echo '<meta http-equiv="refresh" content="0">';//Heads back to the main page
             exit; //Exits and ends the transaction
         } else {
             echo "<br><br><div class='alert'><p>Der var noget der ikke lige funk'ede... Prøv lige igen.=/</p></div>"; //a string that will be triggered in case of connection error or something similar
